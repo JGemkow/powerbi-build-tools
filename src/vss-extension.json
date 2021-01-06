@@ -3,7 +3,7 @@
   "id": "powerbi-build-tools",
   "name": "Power BI Build Tools",
   "version": "1.0.0",
-  "publisher": "bguidinger",
+  "publisher": "jgemkow",
   "description": "Build and Release Tools for Power BI",
   "public": false,
   "targets": [
@@ -41,18 +41,18 @@
   },
   "links": {
     "getstarted": {
-      "uri": "https://github.com/bguidinger/powerbi-build-tools/blob/master/docs/GettingStarted.md"
+      "uri": "https://github.com/jgemkow/powerbi-build-tools/blob/master/docs/GettingStarted.md"
     },
     "repository": {
-      "uri": "https://github.com/bguidinger/powerbi-build-tools"
+      "uri": "https://github.com/jgemkow/powerbi-build-tools"
     },
     "issues": {
-      "uri": "https://github.com/bguidinger/powerbi-build-tools/issues"
+      "uri": "https://github.com/jgemkow/powerbi-build-tools/issues"
     }
   },
   "repository": {
     "type": "git",
-    "uri": "https://github.com/bguidinger/powerbi-build-tools/tree/master"
+    "uri": "https://github.com/jgemkow/powerbi-build-tools/tree/master"
   },
   "branding": {
     "color": "rgb(234, 234, 234)",
@@ -85,6 +85,9 @@
     },
     {
       "path": "tasks/ToolInstaller"
+    },
+    {
+      "path": "tasks/UpdateDatasetParameters"
     }
   ],
   "contributions": [

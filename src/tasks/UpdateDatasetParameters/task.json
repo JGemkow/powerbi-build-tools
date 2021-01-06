@@ -1,0 +1,74 @@
+{
+  "id": "76237136-7256-4BC7-A6AE-1817C876C415",
+  "name": "PowerBIUpdateDatasetParameters",
+  "friendlyName": "Power BI Update Dataset Parameters",
+  "description": "Updates the parameters for a dataset",
+  "author": "jgemkow",
+  "category": "Azure Pipelines",
+  "visibility": [
+    "Build",
+    "Release"
+  ],
+  "demands": [
+    "powershell"
+  ],
+  "version": {
+    "Major": "1",
+    "Minor": "0",
+    "Patch": "0"
+  },
+  "instanceNameFormat": "Power BI Update Dataset Parameters: $(Name)",
+  "inputs": [
+    {
+      "name": "Connection",
+      "aliases": [
+        "connection"
+      ],
+      "type": "connectedService:Power-BI",
+      "label": "Power BI connection",
+      "required": true,
+      "helpMarkDown": "The service connection to Power BI."
+    },
+    {
+      "name": "Workspace",
+      "aliases": [
+        "workspace"
+      ],
+      "type": "string",
+      "label": "Workspace",
+      "required": false,
+      "helpMarkDown": "The ID or name of the workspace. If not specified, your personal workspace will be used."
+    },
+    {
+      "name": "DatasetId",
+      "aliases": [
+        "name"
+      ],
+      "type": "string",
+      "label": "Dataset Id",
+      "required": true,
+      "helpMarkDown": "The ID or name of the dataset"
+    },
+    {
+      "name": "DatasetParameters",
+      "aliases": [
+        "datasetParameters"
+      ],
+      "type": "multiLine",
+      "label": "Dataset Parameters",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "Dataset Parameters in JSON format. The keys are the names of the parameters.  The values are the parameter values.",
+      "properties": {
+        "resizable": "true",
+        "rows": "4",
+        "editorExtension": "ms.vss-services-azure.azure-servicebus-message-grid"
+      }
+    }
+  ],
+  "execution": {
+    "PowerShell3": {
+      "target": "Run.ps1"
+    }
+  }
+}
