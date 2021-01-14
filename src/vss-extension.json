@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "powerbi-build-tools",
   "name": "Power BI Build Tools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "jgemkow",
   "description": "Build and Release Tools for Power BI",
   "public": false,
