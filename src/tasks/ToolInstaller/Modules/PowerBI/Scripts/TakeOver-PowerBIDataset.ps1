@@ -7,7 +7,7 @@ Function TakeOver-PowerBIDataset
 	)
 
 	$GroupId = Get-PowerBIGroup -Group $Group -Id
-	$DatasetId = Get-PowerBIDataset -Group $GroupId -Dataset $Dataset -Id
+	$DatasetId = Get-PowerBIDataset -Group $GroupId -Id $Dataset -Id
 
 	$Url = Get-PowerBIUrl -Group $GroupId -Url "datasets/$DatasetId/Default.TakeOver"
 
