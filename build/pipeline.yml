@@ -29,10 +29,10 @@ steps:
    }
   displayName: 'Prepare Extension'
 
-- task: TfxInstaller@2
+- task: TfxInstaller@3
   displayName: 'Install TFX'
 
-- task: PackageAzureDevOpsExtension@2
+- task: PackageAzureDevOpsExtension@3
   displayName: 'Package Extension'
   inputs:
     rootFolder: '$(Build.SourcesDirectory)/src'
