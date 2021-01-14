@@ -36,7 +36,7 @@ steps:
   displayName: 'Package Extension'
   inputs:
     rootFolder: '$(Build.SourcesDirectory)/src'
-    outputPath: '$(Build.StagingDirectory)/bguidinger.powerbi-build-tools.vsix'
+    outputPath: '$(Build.StagingDirectory)/jgemkow.powerbi-build-tools.vsix'
     extensionVersion: $(Version.MajorMinor).$(Version.Revision)
     updateTasksVersion: true
     extensionPricing: free
