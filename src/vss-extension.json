@@ -88,6 +88,9 @@
     },
     {
       "path": "tasks/UpdateDatasetParameters"
+    },
+    {
+      "path": "tasks/TakeOverDataset"
     }
   ],
   "contributions": [
@@ -315,6 +318,26 @@
       ],
       "properties": {
         "name": "tasks/ToolInstaller"
+      }
+    },
+    {
+      "id": "PowerBIUpdateDatasetParameters",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "tasks/UpdateDatasetParameters"
+      }
+    },
+    {
+      "id": "PowerBITakeOverDataset",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "tasks/TakeOverDataset"
       }
     }
   ]
